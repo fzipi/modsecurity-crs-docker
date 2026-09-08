@@ -236,7 +236,7 @@ These variables are common to image variants and will set defaults based on the 
 | SERVER_SIGNATURE | A string value configuring the footer on server-generated documents (Allowed values: `On`, `Off`, `EMail`. Default: `Off`) |
 | SERVER_TOKENS | Option defining the server information presented to clients in the `Server` HTTP response header. Also see `MODSEC_SERVER_SIGNATURE`. (Allowed values: `Full`, `Prod[uctOnly]`, `Major`, `Minor`, `Min[imal]`, `OS`. Default: `Prod`). |
 | SSL_ENGINE  | A string indicating the SSL Engine Operation Switch (Default: `on`) |
-| SSL_HONOR_CIPHER_ORDER | A string indicating if the server should [honor the cipher list provided by the client](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslhonorcipherorder) (Allowed values: `on`, `off`. Default: `on`) |
+| SSL_HONOR_CIPHER_ORDER | A string indicating if, when enabled, the server should honor its own cipher order defined by `SSLCipherSuite` [rather than the client's](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslhonorcipherorder) (Allowed values: `on`, `off`. Default: `on`) |
 | SSL_PORT | Port number where the SSL enabled webserver is listening | `8443` | - |
 | SSL_SESSION_TICKETS | A string to enable or disable the use of [TLS session tickets](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslsessiontickets) (RFC 5077). (Default: `off`) |
 | TIMEOUT  | Number of seconds before receiving and sending timeout (Default: `60`) |
